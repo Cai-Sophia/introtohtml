@@ -1,0 +1,121 @@
+<!--specifies the version of HTML being used in a web document (HTML5)-->
+<!DOCTYPE html> 
+
+<!--root element of an HTML page
+wraps all the content on the entire page and is the container for all the other HTML elements
+lang attribute declares the language of the web page-->
+<html lang ="en">
+    <!-- container for metadata and other head elements 
+    ex: title, external css, character encoding, script-->
+    <head>
+
+        <!-- INTERNAL CSS
+        used to define a style for a single HTML page-->
+        <style>
+            body {
+                /* background-color: cornflowerblue; 
+                font-size: 75%;
+                font-weight: bold; */
+            }
+            h3 {
+                /* font-style: italic;
+                background-color: cadetblue; */
+            }
+            a {
+                /* color:lightcoral;
+                text-decoration: none; */
+            }
+            a:hover {
+                /* color:goldenrod; */
+            }
+        </style>
+
+        <!-- EXTERNAL CSS
+        - can define multiple css pages
+        - best practice
+        - add a link to it in the head section -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- title for the HTML page (which is shown in the browser's title bar or in the page's tab) -->
+        <!-- <title>Page Title</title> -->
+        <title>Changing the title</title>
+    </head>
+
+    <!-- defines the document's body, and is a container for all the visible contents -->
+    <body>
+    <!-- style attribute is used to add styles (color, font, size) 
+    these are CSS properties with CSS values 
+    (INLINE CSS)-->
+    <!-- <body style="background-color: #C4B5EF;"> -->
+        
+        <!-- different levels of header elements -->
+        <h1>heading 1</h1>
+        <h2>heading 2</h2>
+        <h3>heading 3</h3>
+        <h4>headings can go up to h6</h4>
+        <!-- CSS color property changes the text color
+        hex, rgb, rgba, color names-->
+        <!-- <h1 style = "color: darkslateblue;">heading 1</h1>
+        <h2 style = "color: coral">heading 2</h2>
+        <h3 style = "color: rgb(103, 160, 217);">heading 3</h3> -->
+
+        <!-- paragraph: paragraphs of text on a webpage -->
+        <p>My first paragraph.</p>
+        <!-- <p style="font-family:verdana;">My first paragraph in verdana.</p>
+        <p style="font-family:verdana; font-size:160%;">My first paragraph in verdana but bigger.</p>
+        <p style="font-size:160%; background-color: #C4B5EF;">paragraph but bigger and purple!</p>
+        <p style="background-color: #C4B5EF; text-align: center;">paragraph but purple and centered!</p>
+        <p style="border:3px solid#685b68; text-align: center;">paragraph centered and with a border!</p> -->
+        
+        <!-- paragraph with a line break
+        br does not have a closing tag -->
+        <p>My first paragraph with a break <br> in between</p>
+        
+        <!-- Used as a container for different HTML elements 
+        - takes all available width, and comes with line breaks before / after
+        - used to group sections of a web page together -->
+        <div>div example</div>
+
+        <!-- class: way to group multiple elements so that they can be styled together.
+        Can apply the same class to multiple elements on a page -->
+        <div class="div2">
+            <h2>div 2</h2>
+            <p> this is a part of my second div </p>
+        </div>
+
+        <!-- id: works similarily to class
+        used to uniquely identify a single HTML element on a page. 
+        must be unique within the entire HTML document
+        Can use class and ID on different html elements, not just div-->
+        <div id="myid">
+            <p> example of an id </p>
+        </div>
+        
+        <!-- preformatted text
+        preserves spaces and line breaks-->
+        <pre>
+            i'm supposed
+            to look
+            like this    ...
+        </pre>
+
+        <!-- link destination specified in the href attribute -->
+        <a href="https://youtube.com/shorts/l2P384zEefk?si=Vf9G3gcFKtpG375f">What's this?</a>
+        <br><br>
+        
+        <!-- images
+        src: source file attribute
+        alt: alternative text attribute
+        width and height attributes in pixels -->
+        <img src="image.jpg" alt="Oops" width="250" height="300">
+
+        <!--
+            CSS: cascading style sheet
+            formats the layout of a webpage (color, font, size of text, spacing between elements)
+            3 ways to use CSS: 
+            Inline: by using the style attribute inside HTML elements
+            Internal: by using a <style> element in the <head> section
+            External: by using a <link> element to link to an external CSS file
+        -->
+    </body>
+</html>

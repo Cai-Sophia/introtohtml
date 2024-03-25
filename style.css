@@ -1,0 +1,32 @@
+body {
+    /* background-color: cornflowerblue; 
+    font-size: 75%;
+    font-weight: bold; */
+}
+h3 {
+    /* font-style: italic;
+    background-color: cadetblue; */
+}
+a {
+    /* color:lightcoral;
+    text-decoration: none; */
+}
+a:hover {
+    /* color:goldenrod; */
+}
+
+.div2 {
+    text-align: center; 
+    margin: auto;
+    background-color: darkslateblue;
+    color: azure;
+    border: 10px dotted rgb(220, 203, 93)
+}
+
+#myid {
+    text-align: center; 
+    margin: auto;
+    background-color: rgb(205, 163, 198);
+    color: azure;
+    border: 5px solid rgb(190, 135, 204)
+}
